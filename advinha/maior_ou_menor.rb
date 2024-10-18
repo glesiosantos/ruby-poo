@@ -1,5 +1,5 @@
 da_boas_vinda
-sorteia_numero_secreto
+numero_secreto = sorteia_numero_secreto
 
 total_de_tentativas = 3
 
@@ -39,4 +39,5 @@ def sorteia_numero_secreto
     puts "Escolhendo um número secreto entre 0 e 200 ...."
     numero_secreto = 175
     puts "Escolhido .... que tal adivinha hoje nosso número secreto?"
+    return numero_secreto
 end
