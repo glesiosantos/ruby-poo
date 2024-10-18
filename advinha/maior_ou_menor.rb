@@ -1,12 +1,5 @@
-puts "Bem vindo ao jogo de advinhação"
-puts "Qual é o seu nome?"
-nome = gets
-puts "\n\n\n"
-puts "Começaremos o jogo para você, #{nome}"
-puts "\n\n\n"
-puts "Escolhendo um número secreto entre 0 e 200 ...."
-numero_secreto = 175
-puts "Escolhido .... que tal adivinha hoje nosso número secreto?"
+da_boas_vinda
+numero_secreto = sorteia_numero_secreto
 
 total_de_tentativas = 3
 
@@ -29,3 +22,22 @@ for tentativa in 1..total_de_tentativas
         end    
     end
 end    
+
+
+
+# functions
+def da_boas_vinda
+    puts "Bem vindo ao jogo de advinhação"
+    puts "Qual é o seu nome?"
+    nome = gets
+    puts "\n\n\n"
+    puts "Começaremos o jogo para você, #{nome}"
+    puts "\n\n\n"
+end
+
+def sorteia_numero_secreto
+    puts "Escolhendo um número secreto entre 0 e 200 ...."
+    numero_secreto = 175
+    puts "Escolhido .... que tal adivinha hoje nosso número secreto?"
+    return numero_secreto
+end
